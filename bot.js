@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = "r!"
-const dispatcher = connection.playFile('C:/Users/Discord/Desktop/myfile.mp3');
 
 client.on('ready', () => {
     console.log('Pronto para o serviço.');
