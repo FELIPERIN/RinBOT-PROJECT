@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = "Rin!"
+const dispatcher = connection.playFile('C:/Users/Discord/Desktop/myfile.mp3');
 
 client.on('ready', () => {
     console.log('Pronto para o serviço.');
@@ -9,6 +10,7 @@ client.on('ready', () => {
 client.on ('message' , (message)=>{//Evento
         if(!message.content.startsWith(prefix) || message.author.bot) return ;//author.bot  = se o autor da mensagem for um bot 
         //O resto do codigo
+        if (!message.guild) return;
         if(message.content.startsWith(prefix + "avatar")){
             (message.reply(message.author.avatarURL))//Avatar do autor
         }
@@ -21,7 +23,7 @@ client.on ('message' , (message)=>{//Evento
         if(message.content.startsWith(prefix + "invite")){
             (message.channel.send('https://discordapp.com/api/oauth2/authorize?client_id=450781044455637022&permissions=201706560&scope=bot'))
         }
-        if (message.content === prefix + '/join'){
+        if (message.content === prefix + 'join')
           // Only try to join the sender's voice channel if they are in one themselves
           if (message.member.voiceChannel) {
             message.member.voiceChannel.join()
@@ -31,7 +33,7 @@ client.on ('message' , (message)=>{//Evento
               .catch(console.log);
           } else {
             message.reply('Você precisa conectar em algum canal de voz antes!');
-          } 
+          }
         if(message.content.startsWith(prefix + "help")){
             (message.channel.send({embed: { //faz um "embed"
                 color: 3447003,
@@ -57,10 +59,7 @@ client.on ('message' , (message)=>{//Evento
                 }
               }
             }))
-       
-
-}
-
+        }
 
           
       
