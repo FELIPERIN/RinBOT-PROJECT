@@ -1,10 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = "Rin!";
-
-message1 = 'Olá!';
-message2 = 'Tchau!';
-message3 = 'Como você está?';
+const prefix = "Rin!"/"rin!"
 
 client.on('ready', () => {
     console.log('Pronto para o serviço.');
@@ -22,10 +18,16 @@ client.on ('message' , (message)=>{//Evento
         if (message.content.startsWith(prefix + "criador")){
             (message.channel.send()('FELIPERIN#0001'))
         }
-        if(message.content.startsWith("bom dia")){
-          (message.reply('Bom dia'))
+        if(message.content.startsWith(prefix + "invite")){
+          ((message.channel.send("Aqui está o convite:
+          https://discordapp.com/api/oauth2/authorize?client_id=450781044455637022&permissions=201706560&scope=bot"))
         }
 
+
+          
+      
+        
 })
+
 
 client.login(process.env.BOT_TOKEN);
