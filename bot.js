@@ -42,7 +42,7 @@ client.on ('message' , (message)=>{//Evento
                 timestamp: new Date(),
                 footer: {
                   icon_url: client.user.avatarURL,
-                  text: "© Felipe Oliveira"
+                  text: "FELIPERIN#0001"
                 }
               }
             }))
