@@ -19,7 +19,7 @@ client.on ('message' , (message)=>{//Evento
             (message.channel.send()('FELIPERIN#0001'))
         }
         if(message.content.startsWith(prefix + "invite")){
-          ((message.channel.send('Aqui está o convite: https://discordapp.com/api/oauth2/authorize?client_id=450781044455637022&permissions=201706560&scope=bot'))
+           (message.channel.send()('https://discordapp.com/api/oauth2/authorize?client_id=450781044455637022&permissions=201706560&scope=bot'))
         }
 
 
