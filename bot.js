@@ -29,7 +29,6 @@ client.on ('message' , (message)=>{//Evento
                   icon_url: client.user.avatarURL
                 },
                 title: "Ajuda",
-                url: "http://google.com",
                 description: "Olá, meu nome é **Rin**, eu sou um bot programado por FELIPERIN#0001.",
                 fields: [{
                     name: "Comandos",
