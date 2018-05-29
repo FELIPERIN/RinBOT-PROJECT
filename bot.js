@@ -25,4 +25,4 @@ client.on ('message' , (message)=>{//Evento
         
 })
 
-client.login(process.env.NDUwNzgxMDQ0NDU1NjM3MDIy.De4sSA.vMzAfukm7ZlduEzLJOHdM50bonA);
+client.login(process.env.BOT_TOKEN);
