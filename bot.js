@@ -22,7 +22,9 @@ client.on ('message' , (message)=>{//Evento
         if (message.content.startsWith(prefix + "criador")){
             (message.reply('FELIPERIN#0001'))
         }
-        
+                if(message.content.startsWith("bom dia")) {
+          (message.reply('Bom dia message.author.avatarURL'))
+        }
 })
 
 client.login(process.env.BOT_TOKEN);
