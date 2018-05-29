@@ -20,9 +20,9 @@ client.on ('message' , (message)=>{//Evento
             (message.channel.send('Pong! Your ping is `' + `${Date.now() - message.createdTimestamp}` + ' ms`'))//comando para latencia do bot
         }
         if (message.content.startsWith(prefix + "criador")){
-            (message.reply('FELIPERIN#0001'))
+            (message.channel.send()('FELIPERIN#0001'))
         }
-        if(message.content.startsWith(prefix + "bom dia")){
+        if(message.content.startsWith("bom dia")){
           (message.reply('Bom dia'))
         }
 
