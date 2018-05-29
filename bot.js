@@ -51,7 +51,7 @@ client.on('message', message => {
     // we ignore it
     if (!message.guild) return;
   
-    if (message.content.startsWith(prefix + "join")){
+    if (message.content === prefix + '/join'){
       // Only try to join the sender's voice channel if they are in one themselves
       if (message.member.voiceChannel) {
         message.member.voiceChannel.join()
