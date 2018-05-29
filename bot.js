@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = "Rin!"/"rin!"
+const prefix = "Rin!"
 
 client.on('ready', () => {
     console.log('Pronto para o serviço.');
