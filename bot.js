@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = "Rin!"
+const prefix = "r!"
+const dispatcher = connection.playFile('C:/Users/Discord/Desktop/myfile.mp3');
 
 client.on('ready', () => {
     console.log('Pronto para o serviço.');
@@ -9,9 +10,11 @@ client.on('ready', () => {
 client.on ('message' , (message)=>{//Evento
         if(!message.content.startsWith(prefix) || message.author.bot) return ;//author.bot  = se o autor da mensagem for um bot 
         //O resto do codigo
+
         if (!message.guild) return;
+
         if(message.content.startsWith(prefix + "avatar")){
-            (message.reply(message.author.avatarURL))//Avatar do autor
+            (message.reply(message.author.avatar))//Avatar do autor
         }
         if(message.content.startsWith(prefix + 'ping')){
             (message.channel.send('Pong! Seu ping é `' + `${Date.now() - message.createdTimestamp}` + ' ms`'))//comando para latencia do bot
