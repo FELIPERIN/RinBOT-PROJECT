@@ -21,8 +21,21 @@ client.on ('message' , (message)=>{//Evento
         if(message.content.startsWith(prefix + "invite")){
             (message.channel.send('https://discordapp.com/api/oauth2/authorize?client_id=450781044455637022&permissions=201706560&scope=bot'))
         }
+        if (!message.guild) return;
+  
+        if (message.content === prefix + '/join'){
+          // Only try to join the sender's voice channel if they are in one themselves
+          if (message.member.voiceChannel) {
+            message.member.voiceChannel.join()
+              .then(connection => { // Connection is an instance of VoiceConnection
+                message.reply('Canal de voz conectado!');
+              })
+              .catch(console.log);
+          } else {
+            message.reply('Você precisa conectar em algum canal de voz antes!');
+          } 
         if(message.content.startsWith(prefix + "help")){
-            (message.channel.send({embed: {
+            (message.channel.send({embed: { //faz um "embed"
                 color: 3447003,
                 author: {
                   name: client.user.username,
@@ -46,25 +59,9 @@ client.on ('message' , (message)=>{//Evento
                 }
               }
             }))
-client.on('message', message => {
-    // Voice only works in guilds, if the message does not come from a guild,
-    // we ignore it
-    if (!message.guild) return;
-  
-    if (message.content === prefix + '/join'){
-      // Only try to join the sender's voice channel if they are in one themselves
-      if (message.member.voiceChannel) {
-        message.member.voiceChannel.join()
-          .then(connection => { // Connection is an instance of VoiceConnection
-            message.reply('Canal de voz conectado!');
-          })
-          .catch(console.log);
-      } else {
-        message.reply('Você precisa conectar em algum canal de voz antes!');
-      }
-    }
-  })            
-        }  
+       
+
+}
 
 
           
