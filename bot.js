@@ -18,7 +18,7 @@ client.on ('message' , (message)=>{//Evento
         if(message.content.startsWith(prefix + 'ping')){
             (message.channel.send('Pong! Seu ping é `' + `${Date.now() - message.createdTimestamp}` + ' ms`'))//comando para latencia do bot
         }
-        if (message.content.startsWith(prefix + "criador")){
+        if (message.content.startsWith(prefix + "creator")){
             (message.channel.send('FELIPERIN#0001'))
         }
         if(message.content.startsWith(prefix + "invite")){
@@ -35,7 +35,7 @@ client.on ('message' , (message)=>{//Evento
                 description: "Olá, meu nome é **Rin**, eu sou um bot programado por FELIPERIN#0001.",
                 fields: [{
                     name: "Comandos",
-                    value: "Atualmente meu únicos comandos são: **Rin!help**; **Rin!avatar**; **Rin!ping**; **Rin!criador**; **Rin!invite**."
+                    value: "Atualmente meu únicos comandos são: **r!help**; **r!avatar**; **r!ping**; **r!creator**; **Rin!invite**."
                   },
                   {
                     name: "Desenvolvimento",
