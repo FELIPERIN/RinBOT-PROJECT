@@ -21,6 +21,9 @@ client.on ('message' , (message)=>{//Evento
         if(message.content.startsWith(prefix + "invite")){
             (message.channel.send('https://discordapp.com/api/oauth2/authorize?client_id=450781044455637022&permissions=201706560&scope=bot'))
         }
+        if(message.content.startsWith(prefix + "help")){
+            (message.channel.send('Olá, meu nome é **Rin**, eu sou um bot programado por FELIPERIN#0001. Atualmente meu únicos comandos são: **Rin!help**; **Rin!avatar**; **Rin!ping**; **Rin!criador**; **Rin!invite**. Tenho certeza que meu criador está trabalhando muito para trazer novas funcionalidade para mim, espere por novas funcionalidades futuramente.'))
+        }    
 
 
           
