@@ -22,8 +22,32 @@ client.on ('message' , (message)=>{//Evento
             (message.channel.send('https://discordapp.com/api/oauth2/authorize?client_id=450781044455637022&permissions=201706560&scope=bot'))
         }
         if(message.content.startsWith(prefix + "help")){
-            (message.channel.send('Olá, meu nome é **Rin**, eu sou um bot programado por FELIPERIN#0001. Atualmente meu únicos comandos são: **Rin!help**; **Rin!avatar**; **Rin!ping**; **Rin!criador**; **Rin!invite**. Tenho certeza que meu criador está trabalhando muito para trazer novas funcionalidade para mim, espere por novas funcionalidades futuramente.'))
-        }    
+            (message.channel.send({embed: {
+                color: 3447003,
+                author: {
+                  name: client.user.username,
+                  icon_url: client.user.avatarURL
+                },
+                title: "Ajuda",
+                url: "http://google.com",
+                description: "Olá, meu nome é **Rin**, eu sou um bot programado por FELIPERIN#0001.",
+                fields: [{
+                    name: "Comandos",
+                    value: "Atualmente meu únicos comandos são: **Rin!help**; **Rin!avatar**; **Rin!ping**; **Rin!criador**; **Rin!invite**."
+                  },
+                  {
+                    name: "Desenvolvimento",
+                    value: "Ainda estou em fase de início de desenvolvimento, tenho certeza que meu criador está trabalhando muito para trazer novas funcionalidade para mim, espere por novas funcionalidades futuramente."
+                  }
+                ],
+                timestamp: new Date(),
+                footer: {
+                  icon_url: client.user.avatarURL,
+                  text: "© Felipe Oliveira"
+                }
+              }
+            }))
+        }  
 
 
           
