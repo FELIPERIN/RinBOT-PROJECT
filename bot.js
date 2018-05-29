@@ -21,8 +21,6 @@ client.on ('message' , (message)=>{//Evento
         if(message.content.startsWith(prefix + "invite")){
             (message.channel.send('https://discordapp.com/api/oauth2/authorize?client_id=450781044455637022&permissions=201706560&scope=bot'))
         }
-        if (!message.guild) return;
-  
         if (message.content === prefix + '/join'){
           // Only try to join the sender's voice channel if they are in one themselves
           if (message.member.voiceChannel) {
