@@ -4,10 +4,10 @@ const prefix = "r!"
 
 client.on('ready', () => {
     console.log('Pronto para o serviço.');
+    client.user.setPresence({ status: 'online', game: { name: 'r!help' } });
   }); 
 
 client.on ('message' , (message)=>{//Evento
-        client.user.setPresence({ status: 'online', game: { name: 'r!help' } });
         if(!message.content.startsWith(prefix) || message.author.bot) return ;//author.bot  = se o autor da mensagem for um bot 
         //O resto do codigo
 
