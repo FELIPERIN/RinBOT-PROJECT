@@ -7,7 +7,7 @@ client.on('ready', () => {
   }); 
 
 client.on ('message' , (message)=>{//Evento
-        bot.user.setPresence({ status: 'online', game: { name: 'r!help' } });
+        client.user.setPresence({ status: 'online', game: { name: 'r!help' } });
         if(!message.content.startsWith(prefix) || message.author.bot) return ;//author.bot  = se o autor da mensagem for um bot 
         //O resto do codigo
 
