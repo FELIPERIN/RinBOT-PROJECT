@@ -5,7 +5,7 @@ const prefix = "r!"
 client.on('ready', () => {
     console.log('Pronto para o serviço.');
     client.user.setStatus('Online')
-    bot.user.setPresence({ game: { name: 'r!help', type: 0 } })
+    client.user.setPresence({ game: { name: 'r!help', type: 0 } })
   }); 
 
 client.on ('message' , (message)=>{//Evento
