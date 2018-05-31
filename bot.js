@@ -27,7 +27,7 @@ client.on ('message' , (message)=>{//Evento
             (message.channel.send('https://discordapp.com/api/oauth2/authorize?client_id=450781044455637022&permissions=201706560&scope=bot'))
         }
         if(message.content.startsWith(prefix + "vitoria")){
-            (message.channel.send('ela é muito noob')
+            (message.channel.send('ela é muito noob'))
         }
         if(message.content.startsWith(prefix + "help")){
             (message.channel.send({embed: { //faz um "embed"
