@@ -4,6 +4,7 @@ const prefix = "r!"
 
 client.on('ready', () => {
     console.log('Pronto para o serviço.');
+    client.user.setStatus('Online')
     client.user.setGame('r!help')
   }); 
 
