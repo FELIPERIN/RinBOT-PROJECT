@@ -5,8 +5,8 @@ const prefix = "r!"
 client.on('ready', () => {
     console.log('Pronto para o serviço.');
     client.user.setStatus('Online')
-    client.user.setPresence({ game: { name: 'r!help', url: 'https://www.twitch.tv/feliperin', type: 1 } })
-  }); 
+    client.user.setPresence({ game: { name: 'r!help', type: 0 } })
+  });
 
 client.on ('message' , (message)=>{//Evento
         if(!message.content.startsWith(prefix) || message.author.bot) return ;//author.bot  = se o autor da mensagem for um bot 
