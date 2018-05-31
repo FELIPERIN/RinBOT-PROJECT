@@ -4,7 +4,7 @@ const prefix = "r!"
 
 client.on('ready', () => {
     console.log('Pronto para o serviço.');
-    client.user.setGame({ status: 'online', game: { name: 'r!help' } });
+    client.user.setGame('r!help)
   }); 
 
 client.on ('message' , (message)=>{//Evento
