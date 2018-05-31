@@ -5,7 +5,7 @@ const prefix = "r!"
 client.on('ready', () => {
     console.log('Pronto para o serviço.');
     client.user.setStatus('Online')
-    client.user.setPresence({ game: { name: 'r!help', type: 0 } })
+    client.user.setPresence({ game: { name: 'r!help', url: 'https://www.twitch.tv/feliperin', type: 1 } })
   }); 
 
 client.on ('message' , (message)=>{//Evento
