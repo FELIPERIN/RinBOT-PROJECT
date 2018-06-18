@@ -18,7 +18,7 @@ client.on ('message' , (message)=>{//Evento
             message.reply(message.author.avatarURL)//Avatar do autor
         }
         if(message.content.startsWith(prefix + 'ping')){
-            (message.channel.send('Pong! Seu ping é `' + `${Date.now() - message.createdTimestamp}` + ' ms`'))//comando para latencia do bot
+            (message.channel.send('Pong! Seu ping é `' + `${Date.now() - message.createdTimestamp}` + ' ms'))//comando para latencia do bot
         }
         if (message.content.startsWith(prefix + "creator")){
             (message.channel.send('FELIPERIN#0001'))
