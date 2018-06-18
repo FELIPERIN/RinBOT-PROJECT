@@ -61,7 +61,7 @@ client.on ('message' , (message)=>{//Evento
                   },
                   {
                       name: "Ping",
-                      value: `${Date.now() - message.createdTimestamp}` + ' ms`'
+                      value: `${Date.now() - message.createdTimestamp}` + ' ms'
                   }
                 ],
                 timestamp: new Date(),
