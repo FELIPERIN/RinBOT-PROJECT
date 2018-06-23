@@ -71,11 +71,7 @@ client.on ('message' , (message)=>{//Evento
             }))
         }
         if(message.content.startsWith(prefix + "buy 9mm")){
-            (message.channel.reply("você deseja comprar 30 balas de <:9mm:407378160477405226>?"))
-            (message.channel.send("Digite r!pagar 9mm ou r!pay 9mm para realizar a transação."))
-        }
-        if(message.content.startsWith(prefix + "pay 9mm")){
-            (message.channel.send("30 balas de <:9mm:407378160477405226> foram adicionadas ao seu inventário."))
+            (message.channel.send("Foi adiciona 30 balas de <:9mm:407378160477405226> na sua conta."))
         }
 
 
