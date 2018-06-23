@@ -71,7 +71,7 @@ client.on ('message' , (message)=>{//Evento
             }))
         }
         if(message.content.startsWith(prefix + "buy 9mm")){
-            (message.channel.send("Foi adiciona 30 balas de <:9mm:407378160477405226> na sua conta."))
+            (message.channel.send("Foi adiciona 30 balas de <:9mm:460094763715264512> na sua conta."))
         }
 
 
