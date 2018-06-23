@@ -1,10 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = "r!"
-const buy = "comprar" 
-const comprar = "buy"
-const pay = "pagar"
-const pagar = "buy"
 
 client.on('ready', () => {
     console.log('Pronto para o serviço.');
@@ -74,12 +70,12 @@ client.on ('message' , (message)=>{//Evento
               }
             }))
         }
-        if(message.content.startsWith(prefix + buy + "9mm")){
+        if(message.content.startsWith(prefix + "buy" + "9mm")){
             (message.channel.reply("você deseja comprar 30 balas de <:9mm:407378160477405226>?"))
             (message.channel.send("Digite r!pagar 9mm ou r!pay 9mm para realizar a transação."))
         }
-        if(message.content.startsWith(prefix + pay + "9mm")){
-            (message.channel.send(" 30 balas de <:9mm:407378160477405226> foram adicionadas ao seu inventário."))
+        if(message.content.startsWith(prefix + "pay" + "9mm")){
+            (message.channel.send("30 balas de <:9mm:407378160477405226> foram adicionadas ao seu inventário."))
         }
 
 
