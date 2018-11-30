@@ -24,6 +24,9 @@ client.on ('message' , (message)=>{//Evento
         if(message.content.startsWith(prefix + "invite")){
             (message.channel.send('https://discordapp.com/api/oauth2/authorize?client_id=450781044455637022&permissions=201706560&scope=bot'))
         }
+        if(message.content.startsWith(prefix + "ip")){
+            (message.channel.send('35.199.77.112'))
+        }
         if(message.content.startsWith(prefix + "help")){
             (message.channel.send({embed: { //faz um "embed"
                 color: 3447003,
