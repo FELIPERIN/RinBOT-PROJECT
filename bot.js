@@ -25,7 +25,7 @@ client.on ('message' , (message)=>{//Evento
             (message.channel.send('https://discordapp.com/api/oauth2/authorize?client_id=450781044455637022&permissions=201706560&scope=bot'))
         }
         if(message.content.startsWith(prefix + "ip")){
-            (message.channel.send('Geral: 35.199.77.112 \n CSGO: connect 35.199.77.112;password pamonha'))
+            (message.channel.send('**Geral:** 35.199.77.112 \n**CSGO:** connect 35.199.77.112;password pamonha'))
         }
         if(message.content.startsWith(prefix + "help")){
             (message.channel.send({embed: { //faz um "embed"
