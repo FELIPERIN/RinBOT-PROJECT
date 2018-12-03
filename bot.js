@@ -30,6 +30,9 @@ client.on ('message' , (message)=>{//Evento
         if(message.content.startsWith(prefix + "yt")){
             (message.channel.send('**Felipe:** https://www.youtube.com/FelipeGTBR \n**Lucas:** https://www.youtube.com/paulolucasism'))
         }
+        if (message.content.startsWith(prefix)){
+            (message.channel.send('**Digite** `r!help` **para saber os meus comandos.**'))
+        }
         if(message.content.startsWith(prefix + "help")){
             (message.channel.send({embed: { //faz um "embed"
                 color: 3447003,
@@ -38,7 +41,7 @@ client.on ('message' , (message)=>{//Evento
                   icon_url: client.user.avatarURL
                 },
                 title: "Comandos",
-                description: "Atualmente meu únicos comandos são: **r!info**; **r!help**; **r!avatar**; **r!ping**; **r!creator**; **Rin!invite**.",
+                description: "Atualmente meu únicos comandos são: **r!info**; **r!help**; **r!avatar**; **r!ping**; **r!creator**; **r!invite**; **r!ip**; **r!yt**",
             }
         }))
     }
