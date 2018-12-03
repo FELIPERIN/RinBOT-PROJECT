@@ -25,7 +25,7 @@ client.on ('message' , (message)=>{//Evento
             (message.channel.send('https://discordapp.com/api/oauth2/authorize?client_id=450781044455637022&permissions=201706560&scope=bot'))
         }
         if(message.content.startsWith(prefix + "ip")){
-            (message.channel.send('35.199.77.112'))
+            (message.channel.send('Geral: 35.199.77.112 \n CSGO: connect 35.199.77.112;password pamonha'))
         }
         if(message.content.startsWith(prefix + "help")){
             (message.channel.send({embed: { //faz um "embed"
@@ -76,9 +76,7 @@ client.on ('message' , (message)=>{//Evento
         if(message.content.startsWith(prefix + "buy 9mm")){
             (message.channel.send("Foi adicionado 30 balas de <:9mm:460094763715264512> na sua conta."))
         }
-        if(message.content.startsWith(prefix + "cargo gabriel")){
-            (message.channel.send("o @Gabriel 100% Jesus#4005 precisa do cargo dele de volta @LKS#7592"))
-        }
+       
         
 
 
