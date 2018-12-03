@@ -32,7 +32,7 @@ client.on ('message' , (message)=>{//Evento
         if(message.content.startsWith(prefix + "yt")){
             (message.channel.send('**Felipe:** https://www.youtube.com/FelipeGTBR \n**Lucas:** https://www.youtube.com/paulolucasism'))
         }
-        if (message.content.startsWith(prefix + "  ")){
+        if (message.content.startsWith(prefix + "")){
             (message.channel.send('**Digite** `r!help` **para saber os meus comandos.**'))
         }
         if(message.content.startsWith(prefix + "help")){
