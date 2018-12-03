@@ -27,6 +27,9 @@ client.on ('message' , (message)=>{//Evento
         if(message.content.startsWith(prefix + "ip")){
             (message.channel.send('**Geral:** `35.199.77.112` \n**CS 1.6/SOURCE/GO:** `connect 35.199.77.112;password pamonha` ou steam://connect/35.199.77.112;password/pamonha'))
         }
+        if(message.content.startsWith("ip")){
+            (message.channel.send('**Geral:** `35.199.77.112` \n**CS 1.6/SOURCE/GO:** `connect 35.199.77.112;password pamonha` ou steam://connect/35.199.77.112;password/pamonha'))
+        }
         if(message.content.startsWith(prefix + "yt")){
             (message.channel.send('**Felipe:** https://www.youtube.com/FelipeGTBR \n**Lucas:** https://www.youtube.com/paulolucasism'))
         }
