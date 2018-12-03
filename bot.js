@@ -1,6 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = "r!"
+const ip = "ip"
+const canais = "canais"
 
 client.on('ready', () => {
     console.log('Pronto para o serviço.');
@@ -27,10 +29,13 @@ client.on ('message' , (message)=>{//Evento
         if(message.content.startsWith(prefix + "ip")){
             (message.channel.send('**Geral:** `35.199.77.112` \n**CS 1.6/SOURCE/GO:** `connect 35.199.77.112;password pamonha` ou steam://connect/35.199.77.112;password/pamonha'))
         }
-        if(message.content.startsWith("ip")){
+        if(message.content.startsWith(ip)){
             (message.channel.send('**Geral:** `35.199.77.112` \n**CS 1.6/SOURCE/GO:** `connect 35.199.77.112;password pamonha` ou steam://connect/35.199.77.112;password/pamonha'))
         }
         if(message.content.startsWith(prefix + "yt")){
+            (message.channel.send('**Felipe:** https://www.youtube.com/FelipeGTBR \n**Lucas:** https://www.youtube.com/paulolucasism'))
+        }
+        if(message.content.startsWith(canais)){
             (message.channel.send('**Felipe:** https://www.youtube.com/FelipeGTBR \n**Lucas:** https://www.youtube.com/paulolucasism'))
         }
         if (message.content.startsWith(prefix)){
@@ -85,10 +90,7 @@ client.on ('message' , (message)=>{//Evento
         if(message.content.startsWith(prefix + "buy 9mm")){
             (message.channel.send("Foi adicionado 30 balas de <:9mm:460094763715264512> na sua conta."))
         }
-        async.def.on_message(self, message)
-        if (message.content.startswith("teste")){
-        await self.send_message(message.channel, "testado")
-         }
+
         
 
 
