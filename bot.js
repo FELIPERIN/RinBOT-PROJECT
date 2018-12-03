@@ -85,6 +85,7 @@ client.on ('message' , (message)=>{//Evento
         if(message.content.startsWith(prefix + "buy 9mm")){
             (message.channel.send("Foi adicionado 30 balas de <:9mm:460094763715264512> na sua conta."))
         }
+        async.def.on_message(self, message)
         if (message.content.startswith("teste"))
         await self.send_message(message.channel, "testado")
        
