@@ -83,11 +83,8 @@ client.on ('message' , (message)=>{//Evento
         if(message.content.startsWith(prefix + "buy 9mm")){
             (message.channel.send("Foi adicionado 30 balas de <:9mm:460094763715264512> na sua conta."))
         }
-        if(message.startsWith(prefix + 'WEATHER')){
-            weather.find({search: args.join(" "), degreeType: 'C', function(err, result){
-                if(err)message.channel.send(err);
-
-                message.channel.send(JSON.stringify(result[0].current, null,2));
+        
+                
 
             }});
         }
