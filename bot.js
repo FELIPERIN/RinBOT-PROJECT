@@ -84,18 +84,6 @@ client.on ('message' , (message)=>{//Evento
             (message.channel.send("Foi adicionado 30 balas de <:9mm:460094763715264512> na sua conta."))
         }
         
-                
-
-            }});
-        }
-
-        
-
-
-
-          
-      
-        
 })
 
 
